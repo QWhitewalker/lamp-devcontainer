@@ -1,0 +1,16 @@
+Dev Container::
+
+container:
+apache
+sass
+mysql
+phpmyadmin
+php
+
+extensions:
+ecmel.vscode-html-css
+Zignd.html-css-class-completion
+
+settings:
+tab = two spaces
+auto formatter?
