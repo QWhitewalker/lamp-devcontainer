@@ -4,6 +4,8 @@
 	"name": "Apache",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"dockerFile": "Dockerfile",
+	"forwardPorts": [80],
+	
 	//"image": "mcr.microsoft.com/devcontainers/base:jammy",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -27,8 +29,9 @@
 				 "ecmel.vscode-html-css"
 			 ]
 		}
-   }
+   },
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"remoteUser": "root",
+	"postStartCommand": "service apache2 start"
 }
