@@ -1,5 +1,0 @@
-sudo apt update
-apache2 start
-apache2 status
-
-https://ubuntu.com/tutorials/install-and-configure-apache
