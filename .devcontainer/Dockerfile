@@ -6,4 +6,6 @@ RUN rm /var/www/html/index.html && rmdir /var/www/html && ln -s /workspaces/lamp
 
 RUN apt-get -y install php
 
+RUN apt-get -y install sass
+
 EXPOSE 80
