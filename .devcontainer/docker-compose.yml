@@ -6,5 +6,5 @@ services:
     # list of portforwards
     ports:
       - "80:80"
-    # command to make sure container doesnt close
-    command: /bin/sh -c "while sleep 1000; do :; done"
+    # tell sass to listen to changes (automatically compile)
+    command: sass --no-cache --sourcemap=none --watch /workspaces/lamp-devcontainer/scss:/var/www/html/css
