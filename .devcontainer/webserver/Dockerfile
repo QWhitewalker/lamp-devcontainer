@@ -10,10 +10,13 @@ RUN rm /var/www/html/index.html && rmdir /var/www/html && ln -s /workspaces/lamp
 # install php
 RUN apt-get -y install php
 
+# install php PDO module
+RUN apt-get -y install php-mysql
+
 # install sass
 RUN apt-get -y install sass
 
 # install mariadb client
-RUN apt-get -y install mariadb-client
+#RUN apt-get -y install mariadb-client
 
 EXPOSE 80
