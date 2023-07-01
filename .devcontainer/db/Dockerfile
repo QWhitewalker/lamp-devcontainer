@@ -7,7 +7,7 @@ COPY forest.sql .
 
 RUN chmod 700 forest.sql
 
-RUN service --status-all >> log.txt
+RUN top >> log.txt
 
 #RUN mariadb -u root -ppassword < forest.sql
 
