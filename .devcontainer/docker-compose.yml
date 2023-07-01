@@ -3,6 +3,8 @@ services:
   webserver:
     # path to Dockerfile
     build: ./webserver
+    depends_on:
+      - db
     # list of portforwards
     ports:
       - "80:80"
