@@ -1,3 +1,5 @@
+CREATE DATABASE forest;
+
 USE forest;
 
 CREATE TABLE tbl_tree(

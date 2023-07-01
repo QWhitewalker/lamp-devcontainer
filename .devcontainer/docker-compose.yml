@@ -13,7 +13,7 @@ services:
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: password
-      MARIADB_DATABASE: forest
+      #MARIADB_DATABASE: forest
   db-admin-panel:
     image: phpmyadmin
     restart: always

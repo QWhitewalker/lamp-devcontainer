@@ -7,8 +7,10 @@ COPY forest.sql .
 
 RUN chmod 700 forest.sql
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+RUN service --status-all >> log.txt
 
-CMD ["mariadbd"]
+#RUN mariadb -u root -ppassword < forest.sql
 
-# && mariadb -u root -ppassword < forest.sql
+#ENTRYPOINT ["docker-entrypoint.sh"]
+
+#CMD ["mariadbd"]
