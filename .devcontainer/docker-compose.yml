@@ -1,15 +1,15 @@
 services:
   # service name
-  apache:
+  webserver:
     # path to Dockerfile
-    build: .
+    build: ./webserver
     # list of portforwards
     ports:
       - "80:80"
     # tell sass to listen to changes (automatically compile)
     command: sass --no-cache --sourcemap=none --watch /workspaces/lamp-devcontainer/scss:/var/www/html/css
   db:
-    image: mariadb
+    build: ./db
     #restart: always
     environment:
       MARIADB_ROOT_PASSWORD: password

@@ -1,10 +1,10 @@
 {
-	"name": "Apache",
+	"name": "LAMP Devcontainer",
 	//"dockerFile": "Dockerfile",
 	"dockerComposeFile": [
 	"docker-compose.yml"
 	],
-	"service": "apache",
+	"service": "webserver",
 
   // this is supposed to define where the terminal opens. but at the time of me testing, it doesnt actually work, i just added it to prevent a vs-code warning
   "workspaceFolder": "/workspaces/lamp-devcontainer",
