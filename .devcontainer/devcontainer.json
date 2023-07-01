@@ -6,6 +6,9 @@
 	],
 	"service": "apache",
 
+  // this is supposed to define where the terminal opens. but at the time of me testing, it doesnt actually work, i just added it to prevent a vs-code warning
+  "workspaceFolder": "/workspaces/lamp-devcontainer",
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
