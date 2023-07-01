@@ -10,12 +10,12 @@ services:
     command: sass --no-cache --sourcemap=none --watch /workspaces/lamp-devcontainer/scss:/var/www/html/css
   db:
     build: ./db
-    #restart: always
+    restart: always
     environment:
       MARIADB_ROOT_PASSWORD: password
   db-admin-panel:
     image: phpmyadmin
-    #restart: always
+    restart: always
     ports:
       - 8080:80
     environment:
