@@ -8,3 +8,15 @@ services:
       - "80:80"
     # tell sass to listen to changes (automatically compile)
     command: sass --no-cache --sourcemap=none --watch /workspaces/lamp-devcontainer/scss:/var/www/html/css
+  db:
+    image: mariadb
+    #restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: password
+  db-admin-panel:
+    image: phpmyadmin
+    #restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
