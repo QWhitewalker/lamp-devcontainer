@@ -1,0 +1,10 @@
+services:
+  # service name
+  apache:
+    # path to Dockerfile
+    build: .
+    # list of portforwards
+    ports:
+      - "80:80"
+    # command to make sure container doesnt close
+    command: /bin/sh -c "while sleep 1000; do :; done"
