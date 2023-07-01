@@ -1,8 +1,0 @@
-Dev Container::
-
-container:
-apache
-sass
-mysql
-phpmyadmin
-php
