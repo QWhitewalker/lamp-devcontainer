@@ -11,6 +11,7 @@ services:
   db:
     build: ./db
     restart: always
+    command: docker-entrypoint.sh
     environment:
       MARIADB_ROOT_PASSWORD: password
       MARIADB_DATABASE: forest
