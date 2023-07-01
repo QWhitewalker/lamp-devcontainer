@@ -13,4 +13,7 @@ RUN apt-get -y install php
 # install sass
 RUN apt-get -y install sass
 
+# install mariadb client
+RUN apt-get -y install mariadb-client
+
 EXPOSE 80
