@@ -1,5 +1,5 @@
 {
-	"name": "LAMP Devcontainer",
+	"name": "LAMP Dev Container",
 	"dockerComposeFile": [
 	"docker-compose.yml"
 	],
