@@ -3,6 +3,7 @@ services:
   webserver:
     # path to Dockerfile
     build: ./webserver
+    # can only start after db is running
     depends_on:
       - db
     # list of portforwards
@@ -10,14 +11,20 @@ services:
       - "80:80"
     # tell sass to listen to changes (automatically compile)
     command: sass --no-cache --sourcemap=none --watch /workspaces/lamp-devcontainer/scss:/var/www/html/css
+  # service name
   db:
+    # path to Dockerfile
     build: ./db
     environment:
       MARIADB_ROOT_PASSWORD: password
+  # service name
   db-admin-panel:
+    # docker image
     image: phpmyadmin
+    # list of portforwards
     ports:
       - 8080:80
+    # database login information to automatically connect
     environment:
       - PMA_HOST=db
       - PMA_USER=root
