@@ -3,6 +3,11 @@ services:
   webserver:
     # path to Dockerfile
     build: ./webserver
+    # add workspace as bind mount
+    volumes:
+      - type: bind
+        source: ../
+        target: /workspaces/lamp-devcontainer
     # can only start after db is running
     depends_on:
       - db
