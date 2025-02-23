@@ -1,5 +1,5 @@
 # Ubuntu Devcontainer Base image
-FROM mcr.microsoft.com/devcontainers/base:jammy
+FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
 # install Apache webserver
 RUN apt update && apt-get -y install apache2
