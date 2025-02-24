@@ -15,3 +15,6 @@ RUN apt-get -y install php-mysql
 
 # install sass
 RUN apt-get -y install sass
+
+# install MariaDB Client
+RUN apt-get -y install mariadb-client
