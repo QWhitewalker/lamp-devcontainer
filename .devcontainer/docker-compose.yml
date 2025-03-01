@@ -15,7 +15,7 @@ services:
     ports:
       - "80:80"
     # tell sass to listen to changes (automatically compile)
-    command: sass --no-cache --sourcemap=none --watch /workspaces/lamp-devcontainer/scss:/var/www/html/css
+    command: sass --poll --no-cache --sourcemap=none --watch /workspaces/lamp-devcontainer/scss:/var/www/html/css
   # service name
   db:
     # path to Dockerfile
